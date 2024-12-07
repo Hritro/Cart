@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="flex justify-between items-center px-5 shadow-xl py-1 mx-auto max-w-6xl mt-10 rounded-lg">
+        <div class="font-bold text-xl ">Title</div>
+        <div>
+            <div id="cart-bag" class=" text-4xl relative">
+                <i class="ri-shopping-bag-2-line"></i>
+                <div class=" cart-count text-sm absolute top-1 right-0 bg-red-500 text-white w-4 h-4 flex justify-center items-center rounded-full">0</div>
+            </div>
+        </div>
+    </div>
+    
+   <div class="mx-auto max-w-3xl mt-10">
+    <div class="font-bold text-2xl border-b">Products</div>
+    <div id="product-container" class="grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 gap-3 mt-5"></div>
+   </div>
+   <div id="cart-view" class="hidden">
+    <div class="bg-red-100 border-red-500 p-5 fixed z-50 top-14 right-5 border rounded-lg shadow-2xl w-[400px]">
+        <div class="font-bold ">Cart-<span class="cart-count"></span></div>
+        <div id="cart-products" class="overflow-y-scroll h-[500px]"></div>
+        <!-- TODO PRODUCTS -->
+    </div>
+   </div>
+    
+   
+
+    <script src="./script.js"></script>
+</body>
+</html>
